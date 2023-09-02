@@ -5,21 +5,7 @@ from tabulate import tabulate
 import os, sys
 
 dark = Col.dark_gray
-light = Colors.StaticMIX((Col.cyan, Col.purple, Col.gray))
-acc = Colors.StaticMIX((Col.cyan, Col.purple, Col.blue, Col.gray))
-pheart = Colors.StaticMIX((Col.green, Col.white))
-bpurple = Colors.StaticMIX((Col.purple, Col.cyan))
-
-def p(text):
-    return print(stage(text))
-
-def stage(text: str, symbol: str = '...', col1=light, col2=None) -> str:
-    if col2 is None:
-        col2 = light if symbol == '...' else pheart
-    if symbol in {'...', '!!!'}:
-        return f"""     {Col.Symbol(symbol, col1, dark)} {col2}{text}{Col.reset}"""
-    else:
-        return f""" {Col.Symbol(symbol, col1, dark)} {col2}{text}{Col.reset}"""
+gr = Colors.StaticMIX((Col.green, Col.white))
 
 banner = ''''
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣴⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -84,8 +70,8 @@ def decrypt(encrypted_text, key):
 
 def menu():
     os.system('clear')
-    print(Colorate.Diagonal(Colors.DynamicMIX((pheart, dark)), (banner)))
-    print(((pheart)), (banner1))
+    print(Colorate.Diagonal(Colors.DynamicMIX((gr, dark)), (banner)))
+    print(((gr)), (banner1))
     select = input('\t[?] DEDSEC: ')
     if select == '1':
         original_text = input('\n\tMESSAGE: ')
