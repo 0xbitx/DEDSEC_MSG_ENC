@@ -18,7 +18,7 @@
 * git clone https://github.com/0xbitx/DEDSEC_MSG_ENC.git
 * cd DEDSEC_MSG_ENC
 * pip3 install pystyle pycryptodome tabulate
-* python3 dedsec_msg_enc.py
+* ./dedsec_msg_enc
 
 ### TESTED ON FOLLOWING
 * Kali Linux 
