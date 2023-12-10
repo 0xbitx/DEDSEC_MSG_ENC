@@ -17,7 +17,8 @@
 ### INSTALLATION [KALI - PARROT - TERMUX]
 * git clone https://github.com/0xbitx/DEDSEC_MSG_ENC.git
 * cd DEDSEC_MSG_ENC
-* pip3 install pystyle pycryptodome tabulate
+* pip3 install pystyle
+* chmod +x dedsec_msg_enc
 * ./dedsec_msg_enc
 
 ### TESTED ON FOLLOWING
